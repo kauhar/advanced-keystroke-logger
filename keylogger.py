@@ -6,10 +6,10 @@ from email.mime.base import MIMEBase
 from email import encoders
 import smtplib
 # For collecting computer information
-import socket
-import platform
-import win32clipboard
-import re
+import socket  #used to send message
+import platform #info about os
+import win32clipboard #clipboard 
+import re#regular expression
 from pathlib import Path
 # key strokes
 from pynput.keyboard import Key, Listener
@@ -22,7 +22,7 @@ from playsound import playsound
 from scipy.io.wavfile import write
 import sounddevice as sd
 # encrypting the files
-from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet#symmetric cryptography
 
 import getpass
 from requests import get
